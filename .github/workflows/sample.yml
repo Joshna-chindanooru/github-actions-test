@@ -11,11 +11,8 @@ jobs:
         run: |
           node -v
           npm -v
-jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: checking repo
-      uses: actions/checkout@v1
-    - run: |
-        ls -a
-        ls
+      - name: checking repo
+        uses: actions/checkout@v1
+      - run: |
+          ls -a
+          ls
