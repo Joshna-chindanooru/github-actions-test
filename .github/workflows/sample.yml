@@ -13,6 +13,4 @@ jobs:
           npm -v
       - name: checking repo
         uses: actions/checkout@v1
-      - run: |
-          ls -a
-          ls
+      - run: echo " hello "
