@@ -9,7 +9,7 @@ jobs:
         run: echo "heyy !!!"
       - name: checking repo
         uses: actions/checkout@v1
- good-bye:
+  good-bye:
    runs-on: ubuntu-latest
    steps:
      - run: echo " good-bye"
