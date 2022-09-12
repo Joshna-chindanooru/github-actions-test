@@ -1,0 +1,17 @@
+name: shell commands
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "heyy !!!"
+      - name: checking repo
+        uses: actions/checkout@v1
+ good-bye:
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo " good-bye"
+        
+     
