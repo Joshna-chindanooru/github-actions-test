@@ -1,0 +1,18 @@
+name: demo
+on: push
+jobs:
+  exp-1:
+    runs-on: self-hosted
+    steps:
+      - name: first-step
+        run: echo "hello world"
+      - uses: actions/checkout@v2
+  multi-line:
+    runs-on: self-hosted
+    steps:
+      - name: good-bye
+        run: echo "good-bye!!"
+      - name: multi-line 
+        run: |
+          node -v
+          npm -v
