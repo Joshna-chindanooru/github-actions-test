@@ -8,7 +8,7 @@ jobs:
         run: echo "hello world"
       - uses: actions/checkout@v2
   multi-line:
-    runs-on: self-hosted
+    runs-on: windows-latest
     steps:
       - name: good-bye
         run: echo "good-bye!!"
@@ -17,7 +17,7 @@ jobs:
           node -v
           npm -v
   windows-commands:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: directory bash
         run: pwd
