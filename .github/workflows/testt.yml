@@ -16,3 +16,10 @@ jobs:
         run: |
           node -v
           npm -v
+  windows-commands:
+    runs-on: self-hosted
+    steps:
+      - name: directory bash
+        run: pwd
+        shell: bash
+   
